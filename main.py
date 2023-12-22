@@ -41,6 +41,6 @@ def sentiment_score(review):
 
 # Grab first 512 reviews and create a column for sentiment then average sentiment scores for a final score
 dataframe['sentiment'] = dataframe['review'].apply(lambda x: sentiment_score(x[:512]))
-final_score = dataframe['sentiment'].mean()
+final_score = dataframe['sentiment'].median()
 
 print(final_score)
