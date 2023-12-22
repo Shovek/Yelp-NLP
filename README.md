@@ -18,5 +18,3 @@ A simple command line interface program for sentiment analysis on places listed 
 4. A value will be output which is the resultant sentiment score based on the reviews left by customers
 > 1 is the lowest score while 5 is the highest
 
-## Planned Updates
-Next update will deploy this to the web
