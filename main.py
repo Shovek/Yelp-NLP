@@ -39,7 +39,7 @@ def sentiment_score(review):
   # so we grab the highest probability value and increase by 1 since lists are zero-indexed
   return int(torch.argmax(result.logits)) + 1
 
-# Grab first 512 reviews and create a column for sentiment then average sentiment scores for a final score
+# Grab first 512 reviews and create a column for sentiment then calculate sentiment scores for a final score
 dataframe['sentiment'] = dataframe['review'].apply(lambda x: sentiment_score(x[:512]))
 final_score = dataframe['sentiment'].median()
 
